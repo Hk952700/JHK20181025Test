@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <CheckBox
+        android:id="@+id/itme_itme_che"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:checked="false"/>
+
+    <ImageView
+        android:id="@+id/itme_itme_img"
+        android:layout_toRightOf="@id/itme_itme_che"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/itme_itme_title"
+        android:layout_toRightOf="@id/itme_itme_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123456789"/>
+
+    <TextView
+        android:id="@+id/itme_itme_yuan"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/itme_itme_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元"
+        android:textColor="#ff0000"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/itme_itme_jian"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_remove_circle_outline_black_24dp"/>
+
+    <TextView
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/itme_itme_jian"
+        android:inputType="number"
+        android:text="0"
+        android:background="@drawable/border_shape"
+        android:layout_width="36dp"
+        android:id="@+id/itme_itme_sum"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_toLeftOf="@id/itme_itme_sum"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/itme_itme_jia"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_add_circle_outline_black_24dp"/>
+</RelativeLayout>
