@@ -25,6 +25,7 @@ public abstract class BaseActivityPresenter<T extends AppDelegate> extends AppCo
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // asdasdas 自分支阿斯达大a
 
         delegate.create(getLayoutInflater(),null,savedInstanceState);
         setContentView(delegate.getLayutview());
